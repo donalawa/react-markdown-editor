@@ -9,10 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/dompurify": "^2.3.3",
+    "dompurify": "^2.3.10",
+    "install": "^0.13.0",
+    "isomorphic-dompurify": "^0.20.0",
     "next": "12.2.5",
+    "npm": "^8.18.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "recoil": "^0.7.5"
+    "recoil": "^0.7.5",
+    "sanitize-html": "^2.7.1"
   },
   "devDependencies": {
     "@types/node": "18.7.8",

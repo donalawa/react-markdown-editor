@@ -1,8 +1,9 @@
 export const welcomeFile = {
   fileName: "welcome",
   lastSaveDate: new Date(),
-  content: `# Welcome to Markdown
-
+  content: `
+  # Welcome to Markdown ok
+  
   Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents.
   
   ## How to use this?

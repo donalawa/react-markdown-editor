@@ -9,9 +9,8 @@
     justify-content: space-between;
     height: 45px;
     padding: 0px 20px;
-    background-color: #151619; 
+    background-color: #212529; 
 }
-
 
 
 .editor_title {
@@ -20,10 +19,26 @@
     color: #fff;
 }
 
+.text_container {
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+}
 .editor_text {
-    background-color: #fff;
+    background-color: #151619;
+    color: #ced4da;
     height: 100%;
     border-right: 1px solid gray;
+    white-space: pre-wrap;
+    padding: 22px 23px;
+    font-size: 14px;
+    padding-top: 42px;
+    font-family: Roboto Mono,monospace;
+    outline: none;
+    caret-color: #e46643;
+    transition: height .9s cubic-bezier(.215,.61,.355,1);
+    white-space: pre-line;
+
 }
 
 

@@ -47,13 +47,16 @@
 
 .contentContainer {
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
+  
 }
 
 .content {
     width: 100%;
     /* background-color: #fff; */
+    /* background-color: #151619; */
     transition: width .9s cubic-bezier(.215,.61,.355,1);
+    overflow-y: scroll;
 }
 
 .output {
