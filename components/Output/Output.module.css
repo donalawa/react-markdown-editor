@@ -1,0 +1,22 @@
+
+
+.outputContainer {
+    height: 100%;
+}
+
+
+.output_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    padding: 0px 20px;
+    background-color: #151619; 
+}
+
+
+.output_title {
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+}

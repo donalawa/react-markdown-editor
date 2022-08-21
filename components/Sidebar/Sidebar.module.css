@@ -1,0 +1,43 @@
+
+
+.sidbarContainer {
+    padding: 0px 15px;
+}
+
+.sidebar_title {
+    height: 8vh;
+    /* background-color: green; */
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    color: #fff;
+}
+
+
+.new_document_btn {
+    padding: 14px 11px;
+    width: 100%;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(228,102,69,255);
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.file {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.file_date {
+    color: #ADB5BD;
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+
+.file_name {
+    font-size: 17px;
+    color: #fff;
+}
