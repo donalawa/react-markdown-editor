@@ -1,8 +1,8 @@
-
+import styles from './Sidebar.module.css';
 
 const Sidebar = () => {
     return (
-        <h1>Sidebar Component</h1>
+        <p>Hello world</p>
     )
 }
 

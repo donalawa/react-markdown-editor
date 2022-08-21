@@ -1,0 +1,25 @@
+
+.mainContainer {
+    width: 100%;
+    display: flex;
+}
+
+
+.sidebar {
+    width: 250px;
+    background-color: red;
+    position: fixed;
+    left: 0px;
+    transition: left .9s cubic-bezier(.215,.61,.355,1);
+    height: 100%;
+}
+
+.main {
+    transition: left .9s cubic-bezier(.215,.61,.355,1);
+    width: 100%;
+    position: fixed;
+    left: 250px;
+}
+
+
+

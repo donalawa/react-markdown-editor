@@ -1,6 +1,6 @@
 import ToggleIcon from '../../assets/icon-close.svg';
 import Image from 'next/image';
-import styles from './HeaderMobile.module.css';
+import styles from './Header.module.css';
 
 const HeaderMobile = () => {
     return (
