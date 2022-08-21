@@ -1,6 +1,8 @@
 import styles from './Sidebar.module.css';
 
-const Sidebar = () => {
+const Sidebar = () => { 
+
+  
     return (
         <div className={styles.sidbarContainer}>
             <div className={styles.sidebar_title}>
