@@ -1,0 +1,128 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300&display=swap'); */
+/* :root {
+    --primary-color: "#fff"
+} */
+
+.navContainer {
+    display: flex;
+    height: 8vh;
+    background-color: #343a40;
+    align-items: center;
+    padding-right: 15px;
+    justify-content: space-between;
+}
+
+/* .left_navbar */
+
+.nav_left {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+
+.title, .fileNameLabel, .save_desktop, .header_divider {
+    display: none;
+}
+
+
+.toggle_icon {
+    padding: 6.5px;
+    background-color: #495057;
+    height: 82%;
+    width: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.file_name_container {
+    margin-left: 20px;
+}
+.file_name {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 17px;
+    color: #fff;
+}
+
+
+
+/* NAV RIGHT */
+.nav_right {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.save_mobile {
+    background-color: rgba(228,102,69,255);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .navContainer {
+        /* background-color: orange; */
+    }
+
+
+
+    .title {
+        display: block;
+        letter-spacing: 6px;
+        font-size: 11px;
+        font-family: 'Commissioner', sans-serif;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    .title::after {
+        content: '';
+        position: absolute;
+        border-left: 1px solid #6c757d;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: 222px; /* adjust this */
+        height: 55%; /* adjust this */
+    }
+
+
+
+    .fileNameLabel {
+        display: block;
+        color: #ADB5BD;
+        margin-bottom: 2px;
+        font-size: 15px;
+    }
+
+
+    .file_name_container{
+        margin-left: 24px;
+    }
+
+    .save_mobile {
+        display: none;
+    }
+
+    .save_desktop {
+        display: flex;
+        align-items: center;
+        padding: 11px 11px;
+        background-color: rgba(228,102,69,255);
+        column-gap: 7px;
+        border-radius: 5px;
+        border: 0px solid transparent;
+        color: #fff;
+        cursor: pointer;
+    }
+
+
+}
+
