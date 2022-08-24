@@ -10,6 +10,8 @@
     height: 45px;
     padding: 0px 20px;
     background-color: #212529; 
+    /* position: fixed;
+    width: 100%; */
 }
 
 
@@ -19,11 +21,14 @@
     color: #fff;
 }
 
+
 .text_container {
     display: flex;
     margin: 0 auto;
     height: 100%;
+    padding-top: 20px;
 }
+
 .editor_text {
     background-color: #151619;
     color: #ced4da;
@@ -37,7 +42,6 @@
     outline: none;
     caret-color: #e46643;
     transition: height .9s cubic-bezier(.215,.61,.355,1);
-    white-space: pre-line;
 
 }
 

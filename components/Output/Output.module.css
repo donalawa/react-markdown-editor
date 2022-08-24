@@ -11,7 +11,9 @@
     align-items: center;
     height: 45px;
     padding: 0px 20px;
-    background-color: #151619; 
+    background-color: #212529; 
+    /* position: fixed;
+    width: 100%; */
 }
 
 
@@ -21,3 +23,12 @@
     font-weight: 400;
     letter-spacing: 2px;
 }
+
+.output_content {
+    background-color: #151619;
+    height: 100%;
+    padding: 20px;
+    padding-top: 60px;
+    font-family: Roboto,sans-serif;
+}
+

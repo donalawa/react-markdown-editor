@@ -59,10 +59,12 @@
     overflow-y: scroll;
 }
 
+
 .output {
     width: 0%;
     background-color: #fff;
     transition: width .9s cubic-bezier(.215,.61,.355,1),border-width .9s cubic-bezier(.215,.61,.355,1);
+    overflow-y: scroll;
 }
 
 /* HIDE CONTENT */

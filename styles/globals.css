@@ -14,7 +14,129 @@ body {
 }
 
 
+a,
+p,
+button,
+span,
+li {
+  color: #ced4da;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+code {
+  color: #f8f9fa;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+blockquote,
+ol,
+ul {
+  margin-bottom: 20px;
+}
 
 
+p:last-child {
+  margin-bottom: 0;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Slab", serif;
+}
 
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 42px;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+blockquote,
+pre {
+  padding: 24px;
+  background-color: #343a40;
+  border-radius: 4px;
+}
+
+blockquote {
+  border-left: solid 4px #e46643;
+}
+
+blockquote a,  blockquote p {
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  color: #f8f9fa;
+}
+
+blockquote  a:hover {
+  color: #ced4da;
+}
+
+pre code{
+    font-family: "Roboto Slab", serif;
+    color: #f8f9fa;
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+}
+
+code {
+  font-size: 15px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button, li, p, span {
+  font-family: Roboto,sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}

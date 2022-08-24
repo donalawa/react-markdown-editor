@@ -10,13 +10,16 @@
   },
   "dependencies": {
     "@types/dompurify": "^2.3.3",
+    "@types/marked": "^4.0.6",
     "dompurify": "^2.3.10",
     "install": "^0.13.0",
     "isomorphic-dompurify": "^0.20.0",
+    "marked": "^4.0.19",
     "next": "12.2.5",
     "npm": "^8.18.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-markdown": "^8.0.3",
     "recoil": "^0.7.5",
     "sanitize-html": "^2.7.1"
   },
