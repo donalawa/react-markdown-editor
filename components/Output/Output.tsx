@@ -12,6 +12,7 @@ import { currentFileContentState } from '../../atoms/editorAtom';
 
 const Output = () => {
     let [showPreviewOnly, setShowPreviewOnly] = useRecoilState(showPreviewowOnlyState);
+
     let currentPreviewState = useRecoilValue(showPreviewowOnlyState)
 
     let currentFileContent = useRecoilValue(currentFileContentState);

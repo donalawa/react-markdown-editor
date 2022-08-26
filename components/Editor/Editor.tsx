@@ -3,23 +3,39 @@ import { useRecoilState, useRecoilValue } from 'recoil';
 import { showPreviewowOnlyState } from '../../atoms/editorAtom';
 // var sanitizeHtml = require('sanitize-html');
 import DOMPurify from 'isomorphic-dompurify';
-import { currentFileContentState } from '../../atoms/editorAtom'; 
+import { currentFileContentState, currentActiveFileState } from '../../atoms/editorAtom'; 
 
 import { demoContent } from "../../constants/data";
-
+import { Document } from '../../interfaces';
 
 const Editor = () => {
     const [showPreview, setShowPreview] = useRecoilState(showPreviewowOnlyState);
 
     const [currentContent, setCurrentContent] = useRecoilState(currentFileContentState)
+    const activeFileName = useRecoilValue(currentActiveFileState)
 
     let cleanData = DOMPurify.sanitize(currentContent);
     
 
-    const updateOutput = (e) => {
+    const updateOutput = (e: any) => {
         // console.log("OUTPUT DATA")
         // console.log(e.currentTarget.textContent)
-        setCurrentContent(e.currentTarget.textContent)
+        setCurrentContent(e.currentTarget.textContent);
+        updateStorage(e.currentTarget.textContent);
+    }
+
+    const updateStorage = (textData: string) => {
+        let filesData: any = localStorage.getItem('documents');
+        let allFiles: Document[] | any = JSON.parse(filesData);
+
+        allFiles.forEach((file: Document, index: any) => {
+            if(file.fileName == activeFileName) {
+                allFiles[index].content = textData;
+                return;
+            }
+        })
+        // UPDATE LOCALSTORAGE
+        localStorage.setItem('documents', JSON.stringify(allFiles));
     }
     
 

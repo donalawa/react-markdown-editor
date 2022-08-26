@@ -8,7 +8,7 @@ export const showPreviewowOnlyState = atom({
 
 export const currentActiveFileState = atom({
   key: "currentActiveFile",
-  default: 'default'
+  default: 'welcome'
 })
 
 export const currentFileContentState = atom({

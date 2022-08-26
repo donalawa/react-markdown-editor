@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react';
 import styles from './Sidebar.module.css';
 import { demoContent, untitledDocument } from '../../constants/data';
 import { Document } from '../../interfaces';
-import { currentFileContentState } from '../../atoms/editorAtom';
+import { currentFileContentState, currentActiveFileState } from '../../atoms/editorAtom';
 import { useRecoilState, useRecoilValue } from 'recoil';
 
 const Sidebar = () => { 
     let [allFiles, setAllFiles] = useState<Document[]>([])
     let [currentActive, setCurrentActive] = useRecoilState(currentFileContentState);
+    let [currentActiveFileName, setCurrentActiveFileName] = useRecoilState(currentActiveFileState);
 
-    
     const createNewFile = () => {
         let newFile: Document= {fileName: '', lastUpdatedDate: new Date(), content: ''};
 
@@ -28,6 +28,7 @@ const Sidebar = () => {
 
     const setActiveContent = (file: Document) => {
         setCurrentActive(file.content);
+        setCurrentActiveFileName(file.fileName);
     }
 
 

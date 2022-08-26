@@ -3,11 +3,12 @@ import Image from 'next/image';
 import styles from './Header.module.css';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import { navbarShowState } from '../../atoms/navbarAtom';
-
+import { currentActiveFileState } from '../../atoms/editorAtom';
 
 const HeaderMobile = () => {
 
     let [showNavbar, setShowNavbar] = useRecoilState(navbarShowState);
+    let activeFileName = useRecoilValue(currentActiveFileState);
 
     const showNav = () => {
         setShowNavbar(true);
@@ -39,7 +40,7 @@ const HeaderMobile = () => {
                         <div className={styles.file_name_label_container}>
                             <span className={styles.fileNameLabel}>Document Name</span>
                             <p className={styles.fileName}>
-                                welcome.md
+                                {activeFileName}.md
                             </p>
                         </div>
                     </div>
